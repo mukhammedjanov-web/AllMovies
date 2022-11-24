@@ -105,4 +105,80 @@ a{
       transform: rotate(360deg);
     }
   } 
-/* LOADER STYLES */
+/* LOADER STYLES END*/
+
+
+
+/* MODAL WINDOW STYLES */
+
+.modal-window{
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed;
+    background-color:rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(6px);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.modal-window .modal-container{
+    width: 65%;
+    height: 70%;
+    background-color: rgba(49, 47, 47, 0.74);
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+    position: relative;
+    padding: 10px;  
+   
+
+}
+
+.modal-x{
+    position: absolute;
+    top: 0px;
+    right: -40px;
+
+       
+}
+
+.modal-hide{
+    transform: translateY(-200%);
+}
+
+
+.animate{
+    animation-name: animateModal;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.51, 0.49, 0.63, 0.64);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    
+}
+
+@keyframes animateModal {
+    0% {
+        transform: scale(1) translateX(0);
+    }
+
+    25% {
+        transform: scale(3) translateX(0);
+    }
+
+    50% {
+        transform: scale(1) translateX(0);
+    }
+
+    75% {
+        transform: scale(3) translateX(0);
+    }
+
+
+    100% {
+        transform: scale(1) translateX(0);
+    }
+
+}

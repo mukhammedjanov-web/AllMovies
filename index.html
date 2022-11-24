@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- BOOTSTRAP MIN CSS -->
-    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Movies</title>
-</head>
-<body>
-    
-<header class="header">
-    <div class="container">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
         <div class="fornav">
-            <nav class="nav p-3">
-                <img class="nav__logo" src="./assets/icons/logo.svg" alt="logo">
-                 <ul class="nav__task t-decoration-none">
-                     <li class="nav__item"> <a href="#">TV</a></li>
-                     <li class="nav__item"> <a href="#">Cinema</a> </li>
-                     <li class="nav__item"> <a href="#">GO</a> </li>
-                     <li class="nav__item"> <a href="#">Radio</a> </li>
-                     <li class="nav__item"> <a href="#">Watching</a> </li>
-                     <li class="nav__item"> <a href="#">Login</a> </li>
-                 </ul>
-             </nav>
+          <nav class="nav p-3">
+            <img class="nav__logo" src="./assets/icons/logo.svg" alt="logo" />
+            <ul class="nav__task t-decoration-none">
+              <li class="nav__item"><a href="#">TV</a></li>
+              <li class="nav__item"><a href="#">Cinema</a></li>
+              <li class="nav__item"><a href="#">GO</a></li>
+              <li class="nav__item"><a href="#">Radio</a></li>
+              <li class="nav__item"><a href="#">Watching</a></li>
+              <li class="nav__item"><a href="#">Login</a></li>
+            </ul>
+          </nav>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
+    <main>
+      <div class="modal-window modal-hide">
+        <div class="modal-container">
+          <div class="btn btn btn-danger modal-x ">X</div>
+          <div class="modal-content container">
+            
+          </div>
+        </div>
+      </div>
 
-<section class="section_1">
-    <div class="container">
-        <div class="row">
+      <section class="section_1">
+        <div class="container">
+          <div class="row">
             <div class="col-md-2 p-3">
-                <form action="#" id="submitForm">
-                    <label for="filmName" class="w-100 my-1 fs-5 fw-semibold text-light">
-                        Enter film name
-                        <input type="text" class="form-control my-1 p-2" placeholder="Enter film name"
-                        id="filmName">
-                    </label>
+              <form action="#" id="submitForm">
+                <label
+                  for="filmName"
+                  class="w-100 my-1 fs-5 fw-semibold text-light"
+                >
+                  Enter film name
+                  <input
+                    type="text"
+                    class="form-control my-1 p-2"
+                    placeholder="Enter film name"
+                    id="filmName"
+                  />
+                </label>
 
-                    <label for="filmRating" class="w-100 my-1 fs-5 fw-semibold text-light">
-                        Enter film rating
-                        <input type="number" min="1" max="10" class="form-control my-1 p-2" placeholder="Enter film rating"
-                        id="filmRating">
-                    </label>
+                <label
+                  for="filmRating"
+                  class="w-100 my-1 fs-5 fw-semibold text-light"
+                >
+                  Enter film rating
+                  <input
+                    type="number"
+                    min="1"
+                    max="10"
+                    class="form-control my-1 p-2"
+                    placeholder="Enter film rating"
+                    id="filmRating"
+                  />
+                </label>
 
-                    <select id="category" class="form-select w-100 p-2 my-4">
-                        <option value="all" select disabled>
-                            Select film category
-                        </option>
-                    </select>
+                <select id="category" class="form-select w-100 p-2 my-4">
+                  <option value="all" select disabled>
+                    Select film category
+                  </option>
+                </select>
 
-                    <button type="submit" class=" btn btn-success w-100 p-2 my-2">
-                        <strong>SEARCH</strong>
-                    </button>
-                </form>
+                <button type="submit" class="btn btn-success w-100 p-2 my-2">
+                  <strong>SEARCH</strong>
+                </button>
+              </form>
 
-                <div id="card-res" class="card d-none w-100 p-3 my-3 shadow">
-                    <h4 class="text-white text-center res" ></h4>
-                </div>
+              <div id="card-res" class="card d-none w-100 p-3 my-3 shadow">
+                <h4 class="text-white text-center res"></h4>
+              </div>
             </div>
 
             <div class="main col-md-8 p-3">
-                <div class="wrapper position-relative">
-                    
-                </div>>
+              <div class="wrapper position-relative"></div>
+              >
             </div>
 
-
-            <div class="col p-3">
-                 
-            </div>
+            <div class="col p-3"></div>
+          </div>
         </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-<script src="./db.js"></script>
-<script src="./plugin.js"></script>
-<script src="./script.js"></script>
+      </section>
+    </main>
+  </body>
+  <script src="./db.js"></script>
+  <script src="./plugin.js"></script>
+  <script src="./script.js"></script>
 </html>
